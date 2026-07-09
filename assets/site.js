@@ -56,30 +56,38 @@
   });
 
   form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
     var allOk = true;
     fields.forEach(function (f) {
       if (!validateField(f)) allOk = false;
     });
-
     if (!allOk) {
-      e.preventDefault();
       var firstBad = form.querySelector(".field.invalid input, .field.invalid textarea, .field.invalid select");
       if (firstBad) firstBad.focus();
       return;
     }
 
-    // Si NO hay endpoint real configurado, mostramos el éxito en la misma página.
-    // Cuando conectes Netlify Forms o Formspree, quita este bloque o deja que el
-    // action haga el POST real (ver README, sección "Conectar el formulario").
     var action = form.getAttribute("action") || "";
     var isPlaceholder = action.indexOf("COMPLETAR") !== -1 || action === "" || action === "#";
     if (isPlaceholder) {
-      e.preventDefault();
       form.classList.add("sent");
       var ok = form.querySelector(".form-success");
       if (ok) ok.setAttribute("tabindex", "-1"), ok.focus();
       window.scrollTo({ top: form.getBoundingClientRect().top + window.scrollY - 100, behavior: "smooth" });
+      return;
     }
-    // Si hay endpoint real, dejamos que el navegador haga el POST normalmente.
+
+    // Mautic no manda cabeceras CORS, así que no podemos leer su respuesta
+    // desde JS (fetch con mode "cors" fallaría). Con "no-cors" el envío sí
+    // llega a Mautic igual, solo no vemos la respuesta — así que llevamos
+    // nosotros mismos al visitante a la página de gracias.
+    var submitBtn = form.querySelector("button[type=submit]");
+    if (submitBtn) submitBtn.disabled = true;
+    fetch(action, { method: "POST", mode: "no-cors", body: new FormData(form) })
+      .catch(function () {})
+      .then(function () {
+        window.location.href = "gracias.html";
+      });
   });
 })();
