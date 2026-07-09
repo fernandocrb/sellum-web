@@ -119,7 +119,7 @@ sitio web.
 |---|---|---|---|
 | `[COMPLETAR-WHATSAPP]` | ✅ Completado con `+507 6330-4392` (`wa.me/50763304392`) en todas las páginas. | — | — |
 | `[COMPLETAR-ENDPOINT]` | ✅ Completado — conectado a Mautic (ver punto 4). | — | — |
-| `[COMPLETAR-CALENDLY]` | Opcional, pendiente | `contacto.html` (bloque comentado) | Si quiere ofrecer agenda automática, su enlace de Calendly y descomente ese bloque. |
+| `[COMPLETAR-CALENDLY]` | ✅ Completado con `https://calendly.com/fernandocarlosrb/30min` en `contacto.html`. | — | — |
 
 **Sugerencia de correo:** en el sitio usamos `hola@sellum.net`. Si prefiere otro
 (por ejemplo `fer@sellum.net`), reemplácelo en todos los archivos. Confirme que esa
