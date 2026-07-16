@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es-PA">
+<html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://sellum.net/landing-demo.html">
 <meta name="robots" content="index,follow">
 <meta property="og:type" content="website">
-<meta property="og:locale" content="es_PA">
+<meta property="og:locale" content="es_LA">
 <meta property="og:site_name" content="Sellum">
 <meta property="og:title" content="Diplomas verificables en segundos — Agende su demo">
 <meta property="og:description" content="Que un título de su institución se verifique con un QR en segundos. Agende una demostración de 30 minutos.">
@@ -20,7 +20,7 @@
 <link rel="apple-touch-icon" href="assets/favicon.svg">
 <link rel="stylesheet" href="assets/site.css">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"Sellum","url":"https://sellum.net","logo":"https://sellum.net/assets/sellum-logo-color.png","email":"ventas@sellum.net","areaServed":"PA"}
+{"@context":"https://schema.org","@type":"Organization","name":"Sellum","url":"https://sellum.net","logo":"https://sellum.net/assets/sellum-logo-color.png","email":"ventas@sellum.net","areaServed":"América Latina"}
 </script>
 </head>
 <body>
@@ -41,7 +41,7 @@
     <div class="wrap">
       <div class="hero-grid">
         <div>
-          <span class="eyebrow-chip"><span class="dot"></span> Para universidades, institutos y colegios de Panamá</span>
+          <span class="eyebrow-chip"><span class="dot"></span> Para universidades, institutos y colegios de América Latina</span>
           <h1>Que un título de su institución se verifique en segundos.</h1>
           <p class="lead">Emita diplomas digitales verificables. Cada título se firma criptográficamente y cualquiera lo valida con un QR desde su celular — sin cartas, sin llamadas, sin notaría. Y sus datos se quedan con usted.</p>
           <div class="btn-row" style="margin-top:26px">
@@ -230,7 +230,7 @@
       <div class="offer-band">
         <div class="offer-band__inner">
           <span class="offer-chip"><span class="dot"></span> Cupo limitado · Primeras instituciones 2026</span>
-          <h2>Sea de las primeras instituciones panameñas con diplomas verificables</h2>
+          <h2>Sea de las primeras instituciones de su país con diplomas verificables</h2>
           <p class="lead">Primer año de suscripción sin costo. Su primera emisión de diplomas, sin costo. Así comenzamos con la UNADP — y así puede comenzar la suya. Aceptamos un número reducido de instituciones este año para acompañarlas de cerca.</p>
           <a class="btn btn--gold btn--lg" href="#agendar">Agendar demo de 30 min</a>
         </div>
@@ -269,10 +269,37 @@
                   <input id="l-nombre" name="mauticform[nombre]" type="text" autocomplete="name" data-required required>
                   <span class="err">Por favor, escriba su nombre.</span>
                 </div>
-                <div class="field">
-                  <label for="l-institucion">Institución <span class="req">*</span></label>
-                  <input id="l-institucion" name="mauticform[institucion]" type="text" autocomplete="organization" data-required required>
-                  <span class="err">Indíquenos su institución.</span>
+                <div class="form-2">
+                  <div class="field">
+                    <label for="l-institucion">Institución <span class="req">*</span></label>
+                    <input id="l-institucion" name="mauticform[institucion]" type="text" autocomplete="organization" data-required required>
+                    <span class="err">Indíquenos su institución.</span>
+                  </div>
+                  <div class="field">
+                    <label for="l-pais">País <span class="req">*</span></label>
+                    <select id="l-pais" name="mauticform[pais]" data-required required>
+                      <option value="">Seleccione…</option>
+                      <option value="Panamá">Panamá</option>
+                      <option value="Argentina">Argentina</option>
+                      <option value="Bolivia">Bolivia</option>
+                      <option value="Chile">Chile</option>
+                      <option value="Colombia">Colombia</option>
+                      <option value="Costa Rica">Costa Rica</option>
+                      <option value="Ecuador">Ecuador</option>
+                      <option value="El Salvador">El Salvador</option>
+                      <option value="Guatemala">Guatemala</option>
+                      <option value="Honduras">Honduras</option>
+                      <option value="México">México</option>
+                      <option value="Nicaragua">Nicaragua</option>
+                      <option value="Paraguay">Paraguay</option>
+                      <option value="Perú">Perú</option>
+                      <option value="República Dominicana">República Dominicana</option>
+                      <option value="Uruguay">Uruguay</option>
+                      <option value="Venezuela">Venezuela</option>
+                      <option value="Otro país">Otro país</option>
+                    </select>
+                    <span class="err">Indíquenos su país.</span>
+                  </div>
                 </div>
                 <div class="form-2">
                   <div class="field">
@@ -328,7 +355,7 @@
   <div class="wrap">
     <div class="footer-bottom" style="border-top:0;margin-top:0;padding-top:0">
       <span>© <span data-year>2026</span> Sellum · sellum.net · ventas@sellum.net</span>
-      <span>Hecho en Panamá · W3C Verifiable Credentials + Open Badges 3.0</span>
+      <span>De Panamá para América Latina · W3C Verifiable Credentials + Open Badges 3.0</span>
     </div>
   </div>
 </footer>

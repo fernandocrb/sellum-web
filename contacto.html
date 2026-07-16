@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es-PA">
+<html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +7,7 @@
 <meta name="description" content="Agende una demostración de 30 minutos de Sellum. Le mostramos una credencial verificable en vivo con los datos de su institución y respondemos sus preguntas. Sin compromiso.">
 <link rel="canonical" href="https://sellum.net/contacto.html">
 <meta property="og:type" content="website">
-<meta property="og:locale" content="es_PA">
+<meta property="og:locale" content="es_LA">
 <meta property="og:site_name" content="Sellum">
 <meta property="og:title" content="Agendar una demo de 30 minutos con Sellum">
 <meta property="og:description" content="Le mostramos una credencial verificable en vivo con los datos de su institución. Sin compromiso.">
@@ -19,7 +19,7 @@
 <link rel="apple-touch-icon" href="assets/favicon.svg">
 <link rel="stylesheet" href="assets/site.css">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"Sellum","url":"https://sellum.net","logo":"https://sellum.net/assets/sellum-logo-color.png","email":"ventas@sellum.net","areaServed":"PA"}
+{"@context":"https://schema.org","@type":"Organization","name":"Sellum","url":"https://sellum.net","logo":"https://sellum.net/assets/sellum-logo-color.png","email":"ventas@sellum.net","areaServed":"América Latina"}
 </script>
 </head>
 <body>
@@ -92,10 +92,37 @@
                   <span class="err">Por favor, escriba su nombre.</span>
                 </div>
 
-                <div class="field">
-                  <label for="institucion">Institución <span class="req">*</span></label>
-                  <input id="institucion" name="mauticform[institucion]" type="text" autocomplete="organization" data-required required>
-                  <span class="err">Indíquenos el nombre de su institución.</span>
+                <div class="form-2">
+                  <div class="field">
+                    <label for="institucion">Institución <span class="req">*</span></label>
+                    <input id="institucion" name="mauticform[institucion]" type="text" autocomplete="organization" data-required required>
+                    <span class="err">Indíquenos el nombre de su institución.</span>
+                  </div>
+                  <div class="field">
+                    <label for="pais">País <span class="req">*</span></label>
+                    <select id="pais" name="mauticform[pais]" data-required required>
+                      <option value="">Seleccione…</option>
+                      <option value="Panamá">Panamá</option>
+                      <option value="Argentina">Argentina</option>
+                      <option value="Bolivia">Bolivia</option>
+                      <option value="Chile">Chile</option>
+                      <option value="Colombia">Colombia</option>
+                      <option value="Costa Rica">Costa Rica</option>
+                      <option value="Ecuador">Ecuador</option>
+                      <option value="El Salvador">El Salvador</option>
+                      <option value="Guatemala">Guatemala</option>
+                      <option value="Honduras">Honduras</option>
+                      <option value="México">México</option>
+                      <option value="Nicaragua">Nicaragua</option>
+                      <option value="Paraguay">Paraguay</option>
+                      <option value="Perú">Perú</option>
+                      <option value="República Dominicana">República Dominicana</option>
+                      <option value="Uruguay">Uruguay</option>
+                      <option value="Venezuela">Venezuela</option>
+                      <option value="Otro país">Otro país</option>
+                    </select>
+                    <span class="err">Indíquenos su país.</span>
+                  </div>
                 </div>
 
                 <div class="form-2">
@@ -156,7 +183,7 @@
     <div class="footer-grid">
       <div>
         <div class="footer-logo"><img src="assets/sellum-logo-reverse.png" alt="Sellum" width="150" height="30"></div>
-        <p>Diplomas digitales verificables para universidades, institutos y colegios de Panamá. Cada título se firma criptográficamente y se valida con un QR en segundos.</p>
+        <p>Diplomas digitales verificables para universidades, institutos y colegios de América Latina. Cada título se firma criptográficamente y se valida con un QR en segundos.</p>
       </div>
       <div><h4>Sitio</h4><ul><li><a href="index.html">Inicio</a></li><li><a href="producto.html">Cómo funciona</a></li><li><a href="seguridad.html">Seguridad</a></li><li><a href="verificar.html">Verificar credencial</a></li></ul></div>
       <div><h4>Soluciones</h4><ul><li><a href="universidades.html">Universidades</a></li><li><a href="colegios.html">Colegios</a></li><li><a href="landing-demo.html">Propuesta completa</a></li></ul></div>
@@ -164,7 +191,7 @@
     </div>
     <div class="footer-bottom">
       <span>© <span data-year>2026</span> Sellum · sellum.net</span>
-      <span>Hecho en Panamá · Estándar W3C Verifiable Credentials + Open Badges 3.0</span>
+      <span>De Panamá para América Latina · Estándar W3C Verifiable Credentials + Open Badges 3.0</span>
     </div>
   </div>
 </footer>
