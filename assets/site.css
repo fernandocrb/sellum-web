@@ -3,9 +3,9 @@
    Tokens confirmados contra marca/sellum-marca.html
    ============================================================ */
 :root{
-  --navy:#16233B;
+  --navy:#141D31;
   --navy2:#1F3252;
-  --gold:#B8862F;
+  --gold:#C79A3E;
   --goldl:#D0A24A;
   --paper:#F7F6F2;
   --muted:#6B7280;
@@ -63,7 +63,7 @@ p{margin:0 0 1rem}
 .site-header{position:sticky;top:0;z-index:50;background:rgba(247,246,242,.88);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;gap:20px;height:70px}
 .nav__logo{display:flex;align-items:center}
-.nav__logo img{height:30px;width:auto}
+.nav__logo img{height:44px;width:auto}
 .nav__links{display:flex;gap:6px;margin-left:auto;align-items:center}
 .nav__links a{padding:9px 12px;border-radius:9px;font-size:.94rem;color:#33405a;font-weight:500}
 .nav__links a:hover{background:rgba(22,35,59,.06);color:var(--navy)}
@@ -239,7 +239,7 @@ form.sent .form-success{display:block}
 .footer-grid h4{color:#fff;font-family:var(--sans);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px}
 .footer-grid ul{list-style:none;margin:0;padding:0}
 .footer-grid li{margin:8px 0}
-.footer-logo img{height:30px;margin-bottom:14px}
+.footer-logo img{height:44px;width:auto;margin-bottom:14px}
 .footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:40px;padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;color:#8b94a6;font-size:.85rem}
 
 /* Sticky móvil */

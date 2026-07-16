@@ -1,8 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 76" width="76" height="76">
-  <rect x="0" y="0" width="76" height="76" rx="14" fill="#16233b"/>
+  <rect x="0" y="0" width="76" height="76" rx="16" fill="#141D31"></rect>
   <g transform="translate(6,6)">
-    <circle cx="32" cy="32" r="29" fill="none" stroke="#f7f6f2" stroke-width="2.4"/>
-    <circle cx="32" cy="32" r="23" fill="none" stroke="#f7f6f255" stroke-width="1"/>
-    <path d="M21.5 33 l6.8 6.8 l13.2 -14.4" fill="none" stroke="#d0a24a" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <mask id="m">
+      <rect width="64" height="64" fill="#fff"></rect>
+      <path d="M19 33 l8.5 8.5 l17.5 -19.5" fill="none" stroke="#000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
+    </mask>
+    <circle cx="32" cy="32" r="30" fill="#F6F4EE" mask="url(#m)"></circle>
+    <circle cx="32" cy="32" r="24.5" fill="none" stroke="#C79A3E" stroke-width="1.4" opacity=".7" mask="url(#m)"></circle>
   </g>
 </svg>
