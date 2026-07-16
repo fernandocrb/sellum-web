@@ -256,6 +256,19 @@ form.sent .form-success{display:block}
 .source-note{font-size:.82rem;color:var(--muted)}
 .source-note a{color:var(--gold);text-decoration:underline}
 
+/* Oferta piloto */
+.offer-band{background:var(--white);border:1.5px solid var(--gold);border-radius:20px;padding:40px 44px;box-shadow:var(--shadow-lg);position:relative;overflow:hidden}
+.offer-band::before{content:"";position:absolute;top:0;left:0;width:6px;height:100%;background:linear-gradient(var(--gold),var(--goldl))}
+.offer-band__inner{padding-left:18px;max-width:680px}
+.offer-band h2{margin-bottom:10px}
+.offer-band .lead{margin-bottom:22px}
+.offer-band--compact{padding:24px 26px 24px 30px}
+.offer-band--compact::before{width:5px}
+.offer-band--compact .offer-chip{margin-bottom:10px}
+.offer-band--compact h3{margin:0 0 8px}
+.offer-chip{display:inline-flex;align-items:center;gap:8px;background:rgba(184,134,47,.1);color:#8a631f;border:1px solid rgba(184,134,47,.32);padding:6px 14px;border-radius:999px;font-size:.76rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin-bottom:16px}
+.offer-chip .dot{width:6px;height:6px;border-radius:50%;background:var(--gold)}
+
 /* Cita */
 .quote{font-family:var(--serif);font-size:1.35rem;color:var(--navy);line-height:1.45;font-style:italic}
 .section--navy .quote{color:#fff}
