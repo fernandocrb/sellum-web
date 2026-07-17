@@ -27,9 +27,10 @@ web/
     site.js             → Menú móvil, validación del formulario, etc.
     sellum-logo-color.png
     sellum-logo-reverse.png
+    sellum-logo-mono.png  → Versión monocromo navy para documentos
     sellum-badge-verificado.png
     favicon.svg         → Ícono de la pestaña del navegador
-    og-image.svg        → Imagen que se ve al compartir en redes/WhatsApp
+    og-image.png        → Imagen que se ve al compartir en redes/WhatsApp (1200×630)
   sitemap.xml           → Mapa del sitio para Google
   robots.txt            → Instrucciones para buscadores
   README.md             → Este archivo
@@ -135,10 +136,9 @@ casilla exista y la revise alguien.
 - **Google Search Console** (https://search.google.com/search-console): agregue
   `sellum.net`, verifique la propiedad y envíe el `sitemap.xml`. Así Google lo
   encuentra más rápido.
-- **Imagen para compartir:** el sitio ya trae `assets/og-image.svg`. Algunas apps
-  (ciertos WhatsApp/Facebook) prefieren PNG o JPG. Si nota que la imagen no se ve al
-  compartir, exporte esa imagen a PNG de 1200×630 px, guárdela como
-  `assets/og-image.png` y cambie en cada página `og-image.svg` por `og-image.png`.
+- **Imagen para compartir:** el sitio trae `assets/og-image.png` (1200×630, el
+  formato que WhatsApp y Facebook leen sin problema). Ya está referenciada en las
+  metaetiquetas de todas las páginas; no hay que hacer nada.
 
 ---
 
