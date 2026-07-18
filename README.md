@@ -156,7 +156,7 @@ casilla exista y la revise alguien.
 ## 7. Notas de marca y contenido
 
 - Colores, tipografías (serif para titulares, sans para el cuerpo) y el sello
-  "Verificado por Sellum" siguen el manual `marca/sellum-marca.html`.
+  "Verificado por Sellum" siguen el kit de marca en `sellum-brand/`.
 - Todo el texto está en **español de Panamá**, con trato de **usted** en lo dirigido
   a instituciones.
 - **No** se usan métricas de adopción inventadas. El único cliente mencionado es la
