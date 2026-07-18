@@ -8,7 +8,7 @@
   <url><loc>https://sellum.net/verificar</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://sellum.net/contacto</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://sellum.net/landing-demo</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://sellum.net/recursos</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sellum.net/recursos/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://sellum.net/recursos/como-verificar-titulo-universitario-autentico</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
   <url><loc>https://sellum.net/recursos/fraude-de-diplomas-en-america-latina</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
 </urlset>
