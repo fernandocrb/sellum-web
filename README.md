@@ -22,6 +22,10 @@ web/
   verificar.html        → Cómo cualquiera verifica un diploma por QR
   contacto.html         → Agendar demo (formulario)
   landing-demo.html     → Landing de conversión de una sola página
+  recursos/
+    index.html           → Portada del blog (artículos)
+    como-verificar-titulo-universitario-autentico.html
+    fraude-de-diplomas-en-america-latina.html
   assets/
     site.css            → Estilos (colores y tipografías de marca)
     site.js             → Menú móvil, validación del formulario, etc.
@@ -30,11 +34,18 @@ web/
     sellum-logo-mono.png  → Versión monocromo navy para documentos
     sellum-badge-verificado.png
     favicon.svg         → Ícono de la pestaña del navegador
-    og-image.png        → Imagen que se ve al compartir en redes/WhatsApp (1200×630)
+    og-image.jpg        → Imagen que se ve al compartir en redes/WhatsApp (1200×630)
   sitemap.xml           → Mapa del sitio para Google
   robots.txt            → Instrucciones para buscadores
   README.md             → Este archivo
 ```
+
+**Nota sobre las URLs:** Cloudflare Pages sirve automáticamente cada página sin la
+extensión `.html` (por ejemplo, `producto.html` se ve en `/producto`) y redirige
+la versión con extensión hacia la versión limpia. Por eso todos los enlaces
+internos, el `sitemap.xml` y las etiquetas `canonical`/`og:url` usan la URL sin
+`.html` — así Google no tiene que seguir una redirección extra para llegar a
+cada página.
 
 ---
 
@@ -136,7 +147,7 @@ casilla exista y la revise alguien.
 - **Google Search Console** (https://search.google.com/search-console): agregue
   `sellum.net`, verifique la propiedad y envíe el `sitemap.xml`. Así Google lo
   encuentra más rápido.
-- **Imagen para compartir:** el sitio trae `assets/og-image.png` (1200×630, el
+- **Imagen para compartir:** el sitio trae `assets/og-image.jpg` (1200×630, el
   formato que WhatsApp y Facebook leen sin problema). Ya está referenciada en las
   metaetiquetas de todas las páginas; no hay que hacer nada.
 

@@ -277,3 +277,21 @@ form.sent .form-success{display:block}
 
 .skip-link{position:absolute;left:-999px;top:0;background:var(--navy);color:#fff;padding:10px 16px;border-radius:0 0 8px 0;z-index:100}
 .skip-link:focus{left:0}
+
+/* Artículos / recursos */
+.article{max-width:720px;margin:0 auto}
+.article .meta{font-size:.86rem;color:var(--muted);margin-bottom:8px}
+.article h2{margin-top:2.2em}
+.article h3{margin-top:1.6em}
+.article p{color:#2a2f3a}
+.article ul,.article ol{padding-left:22px;color:#2a2f3a}
+.article li{margin:6px 0}
+.article a{color:var(--gold);text-decoration:underline;text-underline-offset:2px}
+.article a:hover{color:#8a631f}
+.article .lead{color:var(--muted);font-size:1.12rem;max-width:none}
+.article-cards{display:grid;gap:20px;grid-template-columns:repeat(2,1fr)}
+@media(max-width:640px){.article-cards{grid-template-columns:1fr}}
+.article-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);display:block}
+.article-card .kick{margin-bottom:10px}
+.article-card h3{margin:0 0 8px}
+.article-card p{color:var(--muted);font-size:.95rem;margin:0}
