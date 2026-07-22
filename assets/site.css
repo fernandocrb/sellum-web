@@ -295,3 +295,12 @@ form.sent .form-success{display:block}
 .article-card .kick{margin-bottom:10px}
 .article-card h3{margin:0 0 8px}
 .article-card p{color:var(--muted);font-size:.95rem;margin:0}
+
+/* Aviso de cookies (Ley 81) — ver assets/cookies.js */
+.aviso-cookies{position:fixed;left:16px;right:16px;bottom:16px;z-index:70;max-width:720px;margin:0 auto;padding:18px 22px;display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;background:var(--white);color:var(--ink);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-lg)}
+.aviso-cookies p{flex:1 1 300px;margin:0;font-size:.95rem;color:var(--muted)}
+.aviso-cookies a{color:var(--gold);text-decoration:underline;text-underline-offset:2px}
+.aviso-cookies-botones{display:flex;gap:10px;flex:none}
+.aviso-cookies .btn{padding:10px 18px;font-size:.95rem}
+/* En móvil la barra pegajosa de CTA vive abajo: el aviso se sube para no taparla */
+@media(max-width:760px){.aviso-cookies{bottom:84px;padding:16px}.aviso-cookies-botones{width:100%}.aviso-cookies .btn{flex:1}}

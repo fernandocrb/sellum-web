@@ -82,12 +82,15 @@
     // desde JS (fetch con mode "cors" fallaría). Con "no-cors" el envío sí
     // llega a Mautic igual, solo no vemos la respuesta — así que llevamos
     // nosotros mismos al visitante a la página de gracias.
+    // El parámetro "origen" viaja a /gracias para que Analytics pueda
+    // distinguir de qué formulario vino cada lead (ver data-origen en el HTML).
+    var origen = form.getAttribute("data-origen") || "contacto";
     var submitBtn = form.querySelector("button[type=submit]");
     if (submitBtn) submitBtn.disabled = true;
     fetch(action, { method: "POST", mode: "no-cors", body: new FormData(form) })
       .catch(function () {})
       .then(function () {
-        window.location.href = "gracias.html";
+        window.location.href = "/gracias?origen=" + encodeURIComponent(origen);
       });
   });
 })();

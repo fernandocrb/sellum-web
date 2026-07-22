@@ -21,6 +21,8 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"Sellum","url":"https://sellum.net","logo":"https://sellum.net/assets/sellum-logo-color.png","email":"ventas@sellum.net","areaServed":"América Latina"}
 </script>
+<!-- Consentimiento de cookies: decide si se carga Google Tag Manager. Ver assets/cookies.js -->
+<script src="assets/cookies.js"></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Saltar al contenido</a>
@@ -82,7 +84,7 @@
         <div>
           <div class="form-card">
             <!-- Formulario conectado a Mautic (auto-hospedado en mkt.educapanama.net, formId 1) -->
-            <form id="demo-form" action="https://mkt.educapanama.net/form/submit?formId=1" method="POST" enctype="multipart/form-data" novalidate>
+            <form id="demo-form" data-origen="contacto" action="https://mkt.educapanama.net/form/submit?formId=1" method="POST" enctype="multipart/form-data" novalidate>
               <div class="form-body">
                 <h2 style="font-size:1.4rem;margin-top:0">Solicitar demostración</h2>
                 <p class="muted" style="font-size:.92rem">Los campos con <span style="color:var(--gold)">*</span> son obligatorios.</p>
@@ -188,7 +190,7 @@
       </div>
       <div><h4>Sitio</h4><ul><li><a href="/">Inicio</a></li><li><a href="producto">Cómo funciona</a></li><li><a href="seguridad">Seguridad</a></li><li><a href="verificar">Verificar credencial</a></li><li><a href="recursos/">Recursos</a></li></ul></div>
       <div><h4>Soluciones</h4><ul><li><a href="universidades">Universidades</a></li><li><a href="colegios">Colegios</a></li><li><a href="landing-demo">Propuesta completa</a></li></ul></div>
-      <div><h4>Contacto</h4><ul><li><a href="mailto:ventas@sellum.net">ventas@sellum.net</a></li><li><a href="https://wa.me/50763304392" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="https://sellum.net">sellum.net</a></li></ul></div>
+      <div><h4>Contacto</h4><ul><li><a href="mailto:ventas@sellum.net">ventas@sellum.net</a></li><li><a href="https://wa.me/50763304392" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="/privacidad">Privacidad y cookies</a></li></ul></div>
     </div>
     <div class="footer-bottom">
       <span>© <span data-year>2026</span> Sellum · sellum.net</span>

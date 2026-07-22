@@ -31,6 +31,8 @@
 {"@type":"Question","name":"¿Cuánto cuesta?","acceptedAnswer":{"@type":"Answer","text":"Suscripción anual según el tamaño de la institución más un valor por diploma emitido. En la demo le dejamos una propuesta con precios claros y sin letra pequeña — y si su institución entra dentro del cupo de primeras instituciones 2026, el primer año va sin costo."}}
 ]}
 </script>
+<!-- Consentimiento de cookies: decide si se carga Google Tag Manager. Ver assets/cookies.js -->
+<script src="assets/cookies.js"></script>
 </head>
 <body>
 <a class="skip-link" href="#agendar">Saltar al formulario</a>
@@ -268,7 +270,7 @@
         <div>
           <div class="form-card">
             <!-- Formulario conectado a Mautic (auto-hospedado en mkt.educapanama.net, formId 1) -->
-            <form id="demo-form" action="https://mkt.educapanama.net/form/submit?formId=1" method="POST" enctype="multipart/form-data" novalidate>
+            <form id="demo-form" data-origen="demo" action="https://mkt.educapanama.net/form/submit?formId=1" method="POST" enctype="multipart/form-data" novalidate>
               <div class="form-body">
                 <h3 style="margin-top:0;font-size:1.3rem">Solicitar demostración</h3>
                 <p class="muted" style="font-size:.9rem">Campos con <span style="color:var(--gold)">*</span> obligatorios.</p>
@@ -364,6 +366,7 @@
   <div class="wrap">
     <div class="footer-bottom" style="border-top:0;margin-top:0;padding-top:0">
       <span>© <span data-year>2026</span> Sellum · sellum.net · ventas@sellum.net</span>
+      <span><a href="/privacidad">Privacidad y cookies</a></span>
       <span>De Panamá para América Latina · W3C Verifiable Credentials + Open Badges 3.0</span>
     </div>
   </div>
